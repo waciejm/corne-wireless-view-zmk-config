@@ -17,10 +17,12 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings = <&kp>, <&kp>;
+            bindings =
+                <&kp>,
+                <&kp>;
         };
     };
-    
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -32,28 +34,28 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none               &kp Q           &kp W  &kp E           &kp R      &kp T          &kp Y  &kp U      &kp I                &kp O                     &kp P  &none
-&none     &mt LEFT_META A           &kp S  &kp D           &kp F      &kp G          &kp H  &kp J      &kp K                &kp L  &mt RIGHT_META SEMICOLON  &none
-&none  &mt LEFT_CONTROL Z  &mt LEFT_ALT X  &kp C           &kp V      &kp B          &kp N  &kp M  &kp COMMA  &mt LEFT_ALT PERIOD   &mt RIGHT_CONTROL SLASH  &none
-                                           &mo 1  &kp LEFT_SHIFT  &kp SPACE    &lt 2 ENTER  &mo 1   &kp RALT
+&none                &kp Q            &kp W  &kp E           &kp R      &kp T          &kp Y  &kp U      &kp I                 &kp O                      &kp P  &none
+&none     &bmt LEFT_META A            &kp S  &kp D           &kp F      &kp G          &kp H  &kp J      &kp K                 &kp L  &bmt RIGHT_META SEMICOLON  &none
+&none  &bmt LEFT_CONTROL Z  &bmt LEFT_ALT X  &kp C           &kp V      &kp B          &kp N  &kp M  &kp COMMA  &bmt LEFT_ALT PERIOD   &bmt RIGHT_CONTROL SLASH  &none
+                                             &mo 1  &kp LEFT_SHIFT  &kp SPACE    &lt 2 ENTER  &mo 1   &kp RALT
             >;
         };
 
         symbols {
             bindings = <
-&none            &kp NUMBER_1        &kp N2    &kp N3     &kp N4     &kp N5      &kp N6     &kp N7         &kp N8            &kp N9                       &kp N0  &none
-&none    &mt LEFT_META ESCAPE      &kp LBKT  &kp LBRC  &kp MINUS  &kp EQUAL    &kp LEFT   &kp DOWN         &kp UP         &kp RIGHT  &mt RIGHT_META SINGLE_QUOTE  &none
-&none  &mt LEFT_CONTROL GRAVE  &kp LEFT_ALT   &kp TAB   &kp BSPC    &kp DEL    &kp HOME  &kp PG_DN      &kp PG_UP  &mt LEFT_ALT END  &mt RIGHT_CONTROL BACKSLASH  &none
-                                               &trans  &kp LSHFT  &kp SPACE     &kp RET     &trans  &kp RIGHT_ALT
+&none             &kp NUMBER_1        &kp N2    &kp N3     &kp N4     &kp N5      &kp N6     &kp N7         &kp N8             &kp N9                        &kp N0  &none
+&none    &bmt LEFT_META ESCAPE      &kp LBKT  &kp LBRC  &kp MINUS  &kp EQUAL    &kp LEFT   &kp DOWN         &kp UP          &kp RIGHT  &bmt RIGHT_META SINGLE_QUOTE  &none
+&none  &bmt LEFT_CONTROL GRAVE  &kp LEFT_ALT   &kp TAB   &kp BSPC    &kp DEL    &kp HOME  &kp PG_DN      &kp PG_UP  &bmt LEFT_ALT END  &bmt RIGHT_CONTROL BACKSLASH  &none
+                                                &trans  &kp LSHFT  &kp SPACE     &kp RET     &trans  &kp RIGHT_ALT
             >;
         };
 
         media {
             bindings = <
-&none                   &kp F1                   &kp F2           &kp F3  &kp F4  &kp F5          &kp F6        &kp F7        &kp F8        &kp F9                &kp F10  &none
-&none     &mt LEFT_META C_MUTE        &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &none   &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &mt RIGHT_META F11  &none
-&none  &mt LEFT_CONTROL C_PLAY  &mt LEFT_ALT C_PREVIOUS       &kp C_NEXT   &none   &none      &bt BT_CLR         &none         &none  &kp LEFT_ALT  &mt RIGHT_CONTROL F12  &none
-                                                                   &none   &none   &none          &trans         &none        &tog 3
+&none                    &kp F1                    &kp F2           &kp F3  &kp F4  &kp F5          &kp F6        &kp F7        &kp F8        &kp F9                 &kp F10  &none
+&none     &bmt LEFT_META C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &none   &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bmt RIGHT_META F11  &none
+&none  &bmt LEFT_CONTROL C_PLAY  &bmt LEFT_ALT C_PREVIOUS       &kp C_NEXT   &none   &none      &bt BT_CLR         &none         &none  &kp LEFT_ALT  &bmt RIGHT_CONTROL F12  &none
+                                                                     &none   &none   &none          &trans         &none        &tog 3
             >;
         };
 
