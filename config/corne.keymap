@@ -53,8 +53,8 @@
         media {
             bindings = <
 &none                    &kp F1                    &kp F2           &kp F3  &kp F4  &kp F5          &kp F6        &kp F7        &kp F8        &kp F9                 &kp F10  &none
-&none     &bmt LEFT_META C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &none   &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3     &bmt RIGHT_META F11  &none
-&none  &bmt LEFT_CONTROL C_PLAY  &bmt LEFT_ALT C_PREVIOUS       &kp C_NEXT   &none   &none      &bt BT_CLR         &none         &none  &kp LEFT_ALT  &bmt RIGHT_CONTROL F12  &none
+&none     &bmt LEFT_META C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &none   &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2         &none     &bmt RIGHT_META F11  &none
+&none  &bmt LEFT_CONTROL C_PLAY  &bmt LEFT_ALT C_PREVIOUS       &kp C_NEXT   &none   &none    &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR  &kp LEFT_ALT  &bmt RIGHT_CONTROL F12  &none
                                                                      &none   &none   &none          &trans         &none        &tog 3
             >;
         };
@@ -79,9 +79,9 @@
 
         gamingm {
             bindings = <
-&none      &kp F1             &kp F2           &kp F3  &kp F4  &kp F5          &kp F6        &kp F7        &kp F8        &kp F9  &kp F10  &none
-&none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &none   &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &kp F11  &none
-&none  &kp C_PLAY     &kp C_PREVIOUS       &kp C_NEXT   &none   &none      &bt BT_CLR         &none         &none         &none  &kp F12  &none
+&none      &kp F1             &kp F2           &kp F3  &kp F4  &kp F5          &kp F6        &kp F7        &kp F8  &kp F9  &kp F10  &none
+&none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP   &none   &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2   &none  &kp F11  &none
+&none  &kp C_PLAY     &kp C_PREVIOUS       &kp C_NEXT   &none   &none    &bt BT_SEL 3  &bt BT_SEL 4    &bt BT_CLR   &none  &kp F12  &none
                                                 &none   &none   &none          &trans         &none        &tog 3
             >;
         };
