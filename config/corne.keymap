@@ -43,10 +43,10 @@
 
         symbols {
             bindings = <
-&none             &kp NUMBER_1        &kp N2    &kp N3     &kp N4     &kp N5      &kp N6     &kp N7         &kp N8             &kp N9                        &kp N0  &none
-&none    &bmt LEFT_META ESCAPE      &kp LBKT  &kp LBRC  &kp MINUS  &kp EQUAL    &kp LEFT   &kp DOWN         &kp UP          &kp RIGHT  &bmt RIGHT_META SINGLE_QUOTE  &none
-&none  &bmt LEFT_CONTROL GRAVE  &kp LEFT_ALT   &kp TAB   &kp BSPC    &kp DEL    &kp HOME  &kp PG_DN      &kp PG_UP  &bmt LEFT_ALT END  &bmt RIGHT_CONTROL BACKSLASH  &none
-                                                &trans  &kp LSHFT  &kp SPACE     &kp RET     &trans  &kp RIGHT_ALT
+&none             &kp NUMBER_1        &kp N2             &kp N3     &kp N4     &kp N5      &kp N6     &kp N7         &kp N8             &kp N9                        &kp N0  &none
+&none    &bmt LEFT_META ESCAPE      &kp LBKT  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL    &kp LEFT   &kp DOWN         &kp UP          &kp RIGHT  &bmt RIGHT_META SINGLE_QUOTE  &none
+&none  &bmt LEFT_CONTROL GRAVE  &kp LEFT_ALT            &kp TAB   &kp BSPC    &kp DEL    &kp HOME  &kp PG_DN      &kp PG_UP  &bmt LEFT_ALT END  &bmt RIGHT_CONTROL BACKSLASH  &none
+                                                         &trans  &kp LSHFT  &kp SPACE     &kp RET     &trans  &kp RIGHT_ALT
             >;
         };
 
@@ -70,10 +70,10 @@
 
         gamings {
             bindings = <
-&none     &kp N1    &kp N2    &kp N3          &kp N4     &kp N5      &kp N6     &kp N7         &kp N8     &kp N9    &kp N0  &none
-&none    &kp ESC  &kp LBKT  &kp LBRC       &kp MINUS  &kp EQUAL    &kp LEFT   &kp DOWN         &kp UP  &kp RIGHT   &kp SQT  &none
-&none  &kp GRAVE     &none   &kp TAB        &kp BSPC    &kp DEL    &kp HOME  &kp PG_DN      &kp PG_UP    &kp END  &kp BSLH  &none
-                              &trans  &kp LEFT_SHIFT  &kp SPACE     &kp RET     &trans  &kp RIGHT_ALT
+&none     &kp N1    &kp N2             &kp N3          &kp N4     &kp N5      &kp N6     &kp N7         &kp N8     &kp N9    &kp N0  &none
+&none    &kp ESC  &kp LBKT  &kp RIGHT_BRACKET       &kp MINUS  &kp EQUAL    &kp LEFT   &kp DOWN         &kp UP  &kp RIGHT   &kp SQT  &none
+&none  &kp GRAVE     &none            &kp TAB        &kp BSPC    &kp DEL    &kp HOME  &kp PG_DN      &kp PG_UP    &kp END  &kp BSLH  &none
+                                       &trans  &kp LEFT_SHIFT  &kp SPACE     &kp RET     &trans  &kp RIGHT_ALT
             >;
         };
 
