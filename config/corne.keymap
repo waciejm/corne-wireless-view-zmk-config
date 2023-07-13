@@ -52,10 +52,10 @@
 
         media {
             bindings = <
-&none                    &kp F1                    &kp F2           &kp F3      &kp F4      &kp F5    &kp F6      &kp F7  &kp F8        &kp F9                 &kp F10  &none
-&none     &bmt LEFT_META C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &none       &none     &none       &none   &none         &none     &bmt RIGHT_META F11  &none
-&none  &bmt LEFT_CONTROL C_PLAY  &bmt LEFT_ALT C_PREVIOUS       &kp C_NEXT  &bt BT_PRV  &bt BT_NXT     &none       &none   &none  &kp LEFT_ALT  &bmt RIGHT_CONTROL F12  &none
-                                                                     &none       &none       &none    &trans  &bt BT_CLR  &tog 3
+&none                    &kp F1                    &kp F2           &kp F3      &kp F4      &kp F5    &kp F6  &kp F7  &kp F8        &kp F9                 &kp F10  &none
+&none     &bmt LEFT_META C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &none  &bt BT_CLR     &none   &none   &none         &none     &bmt RIGHT_META F11  &none
+&none  &bmt LEFT_CONTROL C_PLAY  &bmt LEFT_ALT C_PREVIOUS       &kp C_NEXT  &bt BT_PRV  &bt BT_NXT     &none   &none   &none  &kp LEFT_ALT  &bmt RIGHT_CONTROL F12  &none
+                                                                     &none       &none       &none    &trans   &none  &tog 3
             >;
         };
 
@@ -79,10 +79,10 @@
 
         gamingm {
             bindings = <
-&none      &kp F1             &kp F2           &kp F3      &kp F4      &kp F5    &kp F6      &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &none       &none     &none       &none   &none   &none  &kp F11  &none
-&none  &kp C_PLAY     &kp C_PREVIOUS       &kp C_NEXT  &bt BT_PRV  &bt BT_NXT     &none       &none   &none   &none  &kp F12  &none
-                                                &none       &none       &none    &trans  &bt BT_CLR  &tog 3
+&none      &kp F1             &kp F2           &kp F3      &kp F4      &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &none  &bt BT_CLR     &none   &none   &none   &none  &kp F11  &none
+&none  &kp C_PLAY     &kp C_PREVIOUS       &kp C_NEXT  &bt BT_PRV  &bt BT_NXT     &none   &none   &none   &none  &kp F12  &none
+                                                &none       &none       &none    &trans   &none  &tog 3
             >;
         };
     };
