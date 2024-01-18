@@ -27,7 +27,7 @@
         compatible = "zmk,keymap";
 
         base {
-            label = "Base";
+            display-name = "Base";
             bindings = <
 &none                &kp Q            &kp W  &kp E           &kp R      &kp T          &kp Y  &kp U      &kp I                 &kp O                      &kp P  &none
 &none     &bmt LEFT_META A            &kp S  &kp D           &kp F      &kp G          &kp H  &kp J      &kp K                 &kp L  &bmt RIGHT_META SEMICOLON  &none
@@ -37,7 +37,7 @@
         };
 
         symbols {
-            label = "Symbols";
+            display-name = "Symbols";
             bindings = <
 &none             &kp NUMBER_1        &kp N2             &kp N3     &kp N4     &kp N5      &kp N6     &kp N7         &kp N8             &kp N9                        &kp N0  &none
 &none    &bmt LEFT_META ESCAPE      &kp LBKT  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL    &kp LEFT   &kp DOWN         &kp UP          &kp RIGHT  &bmt RIGHT_META SINGLE_QUOTE  &none
@@ -47,7 +47,7 @@
         };
 
         media {
-            label = "Media";
+            display-name = "Media";
             bindings = <
 &none                    &kp F1                    &kp F2           &kp F3      &kp F4      &kp F5    &kp F6  &kp F7  &kp F8        &kp F9                 &kp F10  &none
 &none     &bmt LEFT_META C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &none  &bt BT_CLR     &none   &none   &none         &none     &bmt RIGHT_META F11  &none
@@ -57,7 +57,7 @@
         };
 
         gaming {
-            label = "Gaming";
+            display-name = "Gaming";
             bindings = <
 &none  &kp Q  &kp W  &kp E      &kp R      &kp T          &kp Y  &kp U          &kp I    &kp O     &kp P  &none
 &none  &kp A  &kp S  &kp D      &kp F      &kp G          &kp H  &kp J          &kp K    &kp L  &kp SEMI  &none
@@ -67,7 +67,7 @@
         };
 
         gamings {
-            label = "GamingS";
+            display-name = "GamingS";
             bindings = <
 &none     &kp N1    &kp N2             &kp N3          &kp N4     &kp N5      &kp N6     &kp N7         &kp N8     &kp N9    &kp N0  &none
 &none    &kp ESC  &kp LBKT  &kp RIGHT_BRACKET       &kp MINUS  &kp EQUAL    &kp LEFT   &kp DOWN         &kp UP  &kp RIGHT   &kp SQT  &none
@@ -77,7 +77,7 @@
         };
 
         gamingm {
-            label = "GamingM";
+            display-name = "GamingM";
             bindings = <
 &none      &kp F1             &kp F2           &kp F3      &kp F4      &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
 &none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &none  &bt BT_CLR     &none   &none   &none   &none  &kp F11  &none
