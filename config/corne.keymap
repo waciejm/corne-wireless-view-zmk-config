@@ -7,6 +7,7 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/mouse.h>
 
 / {
     behaviors {
@@ -17,9 +18,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "balanced";
-            bindings =
-                <&kp>,
-                <&kp>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -29,39 +28,39 @@
         base {
             display-name = "Base";
             bindings = <
-&none                &kp Q            &kp W  &kp E           &kp R      &kp T          &kp Y  &kp U      &kp I                 &kp O                      &kp P  &none
-&none     &bmt LEFT_META A            &kp S  &kp D           &kp F      &kp G          &kp H  &kp J      &kp K                 &kp L  &bmt RIGHT_META SEMICOLON  &none
-&none  &bmt LEFT_CONTROL Z  &bmt LEFT_ALT X  &kp C           &kp V      &kp B          &kp N  &kp M  &kp COMMA  &bmt LEFT_ALT PERIOD   &bmt RIGHT_CONTROL SLASH  &none
-                                             &mo 1  &kp LEFT_SHIFT  &kp SPACE    &lt 2 ENTER  &mo 1   &kp RALT
+&none  &kp Q                &kp W            &kp E  &kp R           &kp T        &kp Y        &kp U  &kp I      &kp O                 &kp P                      &none
+&none  &bmt LEFT_META A     &kp S            &kp D  &kp F           &kp G        &kp H        &kp J  &kp K      &kp L                 &bmt RIGHT_META SEMICOLON  &none
+&none  &bmt LEFT_CONTROL Z  &bmt LEFT_ALT X  &kp C  &kp V           &kp B        &kp N        &kp M  &kp COMMA  &bmt LEFT_ALT PERIOD  &bmt RIGHT_CONTROL SLASH   &none
+                                             &mo 1  &kp LEFT_SHIFT  &kp SPACE    &lt 2 ENTER  &mo 1  &kp RALT
             >;
         };
 
         symbols {
             display-name = "Symbols";
             bindings = <
-&none             &kp NUMBER_1        &kp N2             &kp N3     &kp N4     &kp N5      &kp N6     &kp N7         &kp N8             &kp N9                        &kp N0  &none
-&none    &bmt LEFT_META ESCAPE      &kp LBKT  &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL    &kp LEFT   &kp DOWN         &kp UP          &kp RIGHT  &bmt RIGHT_META SINGLE_QUOTE  &none
-&none  &bmt LEFT_CONTROL GRAVE  &kp LEFT_ALT            &kp TAB   &kp BSPC    &kp DEL    &kp HOME  &kp PG_DN      &kp PG_UP  &bmt LEFT_ALT END  &bmt RIGHT_CONTROL BACKSLASH  &none
-                                                         &trans  &kp LSHFT  &kp SPACE     &kp RET     &trans  &kp RIGHT_ALT
+&none  &kp NUMBER_1             &kp N2        &kp N3             &kp N4     &kp N5       &kp N6    &kp N7     &kp N8         &kp N9             &kp N0                        &none
+&none  &bmt LEFT_META ESCAPE    &kp LBKT      &kp RIGHT_BRACKET  &kp MINUS  &kp EQUAL    &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT          &bmt RIGHT_META SINGLE_QUOTE  &none
+&none  &bmt LEFT_CONTROL GRAVE  &kp LEFT_ALT  &kp TAB            &kp BSPC   &kp DEL      &kp HOME  &kp PG_DN  &kp PG_UP      &bmt LEFT_ALT END  &bmt RIGHT_CONTROL BACKSLASH  &none
+                                              &trans             &kp LSHFT  &kp SPACE    &kp RET   &trans     &kp RIGHT_ALT
             >;
         };
 
         media {
             display-name = "Media";
             bindings = <
-&none                    &kp F1                    &kp F2           &kp F3      &kp F4      &kp F5    &kp F6  &kp F7  &kp F8        &kp F9                 &kp F10  &none
-&none     &bmt LEFT_META C_MUTE         &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &none  &bt BT_CLR     &none   &none   &none         &none     &bmt RIGHT_META F11  &none
-&none  &bmt LEFT_CONTROL C_PLAY  &bmt LEFT_ALT C_PREVIOUS       &kp C_NEXT  &bt BT_PRV  &bt BT_NXT     &none   &none   &none  &kp LEFT_ALT  &bmt RIGHT_CONTROL F12  &none
-                                                                     &none       &none       &none    &trans   &none  &tog 3
+&none  &kp F1                    &kp F2                    &kp F3           &kp F4      &kp F5        &kp F6    &kp F7    &kp F8    &kp F9        &kp F10                 &none
+&none  &bmt LEFT_META C_MUTE     &kp C_VOLUME_DOWN         &kp C_VOLUME_UP  &none       &bt BT_CLR    &none     &none     &none     &none         &bmt RIGHT_META F11     &none
+&none  &bmt LEFT_CONTROL C_PLAY  &bmt LEFT_ALT C_PREVIOUS  &kp C_NEXT       &bt BT_PRV  &bt BT_NXT    &mkp MB3  &mkp MB1  &mkp MB2  &kp LEFT_ALT  &bmt RIGHT_CONTROL F12  &none
+                                                           &none            &none       &none         &trans    &none     &tog 3
             >;
         };
 
         gaming {
             display-name = "Gaming";
             bindings = <
-&none  &kp Q  &kp W  &kp E      &kp R      &kp T          &kp Y  &kp U          &kp I    &kp O     &kp P  &none
-&none  &kp A  &kp S  &kp D      &kp F      &kp G          &kp H  &kp J          &kp K    &kp L  &kp SEMI  &none
-&none  &kp Z  &kp X  &kp C      &kp V      &kp B          &kp N  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &none
+&none  &kp Q  &kp W  &kp E  &kp R      &kp T        &kp Y        &kp U  &kp I          &kp O    &kp P     &none
+&none  &kp A  &kp S  &kp D  &kp F      &kp G        &kp H        &kp J  &kp K          &kp L    &kp SEMI  &none
+&none  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp N        &kp M  &kp COMMA      &kp DOT  &kp FSLH  &none
                      &mo 4  &kp LSHFT  &kp SPACE    &lt 5 ENTER  &mo 4  &kp RIGHT_ALT
             >;
         };
@@ -69,20 +68,20 @@
         gamings {
             display-name = "GamingS";
             bindings = <
-&none     &kp N1    &kp N2             &kp N3          &kp N4     &kp N5      &kp N6     &kp N7         &kp N8     &kp N9    &kp N0  &none
-&none    &kp ESC  &kp LBKT  &kp RIGHT_BRACKET       &kp MINUS  &kp EQUAL    &kp LEFT   &kp DOWN         &kp UP  &kp RIGHT   &kp SQT  &none
-&none  &kp GRAVE     &none            &kp TAB        &kp BSPC    &kp DEL    &kp HOME  &kp PG_DN      &kp PG_UP    &kp END  &kp BSLH  &none
-                                       &trans  &kp LEFT_SHIFT  &kp SPACE     &kp RET     &trans  &kp RIGHT_ALT
+&none  &kp N1     &kp N2    &kp N3             &kp N4          &kp N5       &kp N6    &kp N7     &kp N8         &kp N9     &kp N0    &none
+&none  &kp ESC    &kp LBKT  &kp RIGHT_BRACKET  &kp MINUS       &kp EQUAL    &kp LEFT  &kp DOWN   &kp UP         &kp RIGHT  &kp SQT   &none
+&none  &kp GRAVE  &none     &kp TAB            &kp BSPC        &kp DEL      &kp HOME  &kp PG_DN  &kp PG_UP      &kp END    &kp BSLH  &none
+                            &trans             &kp LEFT_SHIFT  &kp SPACE    &kp RET   &trans     &kp RIGHT_ALT
             >;
         };
 
         gamingm {
             display-name = "GamingM";
             bindings = <
-&none      &kp F1             &kp F2           &kp F3      &kp F4      &kp F5    &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP       &none  &bt BT_CLR     &none   &none   &none   &none  &kp F11  &none
-&none  &kp C_PLAY     &kp C_PREVIOUS       &kp C_NEXT  &bt BT_PRV  &bt BT_NXT     &none   &none   &none   &none  &kp F12  &none
-                                                &none       &none       &none    &trans   &none  &tog 3
+&none  &kp F1      &kp F2             &kp F3           &kp F4      &kp F5        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &none
+&none  &kp C_MUTE  &kp C_VOLUME_DOWN  &kp C_VOLUME_UP  &none       &bt BT_CLR    &none   &none   &none   &none   &kp F11  &none
+&none  &kp C_PLAY  &kp C_PREVIOUS     &kp C_NEXT       &bt BT_PRV  &bt BT_NXT    &none   &none   &none   &none   &kp F12  &none
+                                      &none            &none       &none         &trans  &none   &tog 3
             >;
         };
     };
